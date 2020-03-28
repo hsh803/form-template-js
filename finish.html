@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finish application</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body>
+	<div class="content">
+        <p id="output"></p>
+        <p>Your application is submitted.</p>
+    </div>
+    
+    <script>
+    var para = location.search.substring(1).split("&");
+            document.getElementById("output").innerHTML = "Thank you, " + para[0].split("=")[1] + " " + para[1].split("=")[1] + ".";  
+    </script>
+</body>
+</html>
