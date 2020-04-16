@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conference application</title>
-    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <h1>Conference application</h1>
         <p>Fill information application format to attend to the conference.</p>
 
-        <form method="get" action="finish.html">
+        <form id="form" method="get" action="finish.html">
             <fieldset>
                 <legend>Contact information (Required)</legend>
                 <div>
@@ -60,14 +61,13 @@
             <fieldset>
                 <legend>Message (Optional)</legend>
                 <label for="message">max 200 words</label>
-                <textarea id="message" name="message" cols="50" rows="4"  tabindex="9"></textarea>
+                <textarea id="message" name="message" cols="50" rows="4" tabindex="9"></textarea>
             </fieldset>
 
-            <button type="submit" id="submit" name="submit" tabindex="10">Submit</button>
+            <input type="submit" id="submit" name="submit" value="Submit" onclick="formValidation()" tabindex="10">
         </form>
     </div>
 
-    <script src="scripts/validate.js"></script>
 </body>
 
 </html>
