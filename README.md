@@ -1,4 +1,4 @@
-# Form template (JS)
+# Form template
 
 1. Languages: HTML, CSS, Javascript
 2. Tools: Visual Design Code
